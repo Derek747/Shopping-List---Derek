@@ -2,26 +2,28 @@
 <html>
 <head>
 	<title>Javascript + DOM</title>
-
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
-
 </head>
 <body>
-
 	<h1>Shopping List</h1>
-	<p id="first">Get it done today</p>
-	<input id="userinput" type="text" placeholder="enter items">
-	<button id="enter">Enter</button>
-	<ul>
-		<li class="bold red" random="23">Notebook<button class="delete">Delete</button></li>
-		<li>Jello<button class="delete">Delete</button></li>
-		<li>Spinach<button class="delete">Delete</button></li>
-		<li>Rice<button class="delete">Delete</button></li>
-		<li>Birthday Cake<button class="delete">Delete</button></li>
-		<li>Candles<button class="delete">Delete</button></li>
+	<h3 id="first">How to use it?</h3>
+	<div class="instruction">
+		<p class="notes">1. You can add any item by typing in the below box and pressing enter.</p>
+		<p class="notes">2. The item can be crossed out by clicking on it.</p>
+		<p class="notes">3. If you want to remove the item, just pressing the delet button.</p>
+	</div>
+	<div class= "middle">
+		<input id="userinput" type="text" placeholder="enter items">
+		<button id="enter" type="button" class="btn btn-outline-dark">Enter</button>
+	</div>
+	<ul class="container">
+		<li class="item" >Notebook<button class="delete btn btn-outline-dark" type="button">Delete</button></li>
+		<li class="item">Jello<button class="delete btn btn-outline-dark" type="button">Delete</button></li>
+		<li class="item">Spinach<button class="delete btn btn-outline-dark" type="button" class="btn btn-light">Delete</button></li>
+		<li class="item">Rice<button class="delete btn btn-outline-dark" type="button" class="btn btn-light">Delete</button></li>
 	</ul>
-	<!-- <button class = "she">Test</button> -->
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

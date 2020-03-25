@@ -33,7 +33,7 @@ function createListElement() {
 	var cbtn = document.createElement("button");
 	var cclass = document.createAttribute("class");
 	cbtn.appendChild(document.createTextNode("Delete"));
-	cclass.value ="delete"
+	cclass.value ="delete btn btn-outline-dark"
 	cbtn.setAttributeNode(cclass);
 	cbtn.onclick= removeList;
 
